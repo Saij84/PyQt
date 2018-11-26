@@ -9,10 +9,15 @@ window.resize(800, 650)
 
 label = QLabel("Style")
 
+
+
 qTopLayout = QHBoxLayout()
 qTopLayout.addWidget(label)
+centWidget = QWidget()
 
-window.addDockWidget(qTopLayout)
+layout = window.setLayout(qTopLayout)
+centralWid = window.setCentralWidget(label)
+
 window.show()
 
 
