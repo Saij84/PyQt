@@ -23,7 +23,7 @@ class WidgetGallery(QDialog):
         self.createBottomLeftTabWidget()
         self.createBottomRightTabWidget()
         self.createProgressBar()
-        
+
         styleComboBox.activate[str].connect(self.changeStyle)
         self.useStylePalletCheckBox.toggle.connect(self.changePalette)
         disableWidgetCheckbox.toggled.connect(self.topLeftGroupBox.setDisabled)
@@ -87,6 +87,41 @@ class WidgetGallery(QDialog):
         layout.addWidget(checkBox)
         layout.addStretch(1)
         self.topLeftGroupBox.setLayout(layout)
+
+    def createTopRightGroupBox(self):
+        self.topRightGroupBox = QGroupBox("Group 2")
+
+        defaultPushButton = QPushButton("Default Push Button")
+        defaultPushButton.setDefault(True)
+
+        togglePushButton = QPushButton("Toggle Push Button")
+        togglePushButton.setChecked(True)
+        togglePushButton.setChecked(True)
+
+        flatPushButton = QPushButton("Flat Push Button")
+        flatPushButton.setFlat(True)
+
+        layout = QVBoxLayout()
+        layout.addWidget(defaultPushButton)
+        layout.addWidget(togglePushButton)
+        layout.addWidget(flatPushButton)
+        layout.addStretch(1)
+        self.topRightGroupBox.setLayout(layout)
+
+    def createBottomLeftTabWidget(self):
+        self.bottomLeftTabWidget = QTabWidget()
+        self.bottomLeftTabWidget.setSizePolicy(QSizePolicy.Preferred,
+                                               QSizePolicy.Ignored)
+        tab1 = QWidget()
+        tableWidget = QTableWidget(10, 10)
+
+        tab1hbox = QHBoxLayout()
+        tab1hbox.setContentsMargins(5, 5, 5, 5)
+        tab1hbox.addWidget(tableWidget)
+        tab1.setLayout()
+
+        textEdit.setP
+
 
 
 if __name__ == "__main__":
