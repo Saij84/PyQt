@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
         QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
         QVBoxLayout, QWidget)
 
-from PyQt5.QtCore import Qt, QDateTime, QTime
+from PyQt5.QtCore import Qt, QDateTime, QTimer
 
 class WidgetGallery(QDialog):
     def __init__(self, parent=None):
@@ -49,12 +49,12 @@ class WidgetGallery(QDialog):
         mainLayout.addWidget(self.topLeftGroupBox, 1, 0)
         mainLayout.addWidget(self.topRightGroupBox, 1, 1)
         mainLayout.addWidget(self.bottomLeftTabWidget, 2, 0)
-        mainLayout.addWidget(self.bottomRightgroupBox, 2, 1)
+        mainLayout.addWidget(self.bottomRightGroupBox, 2, 1)
         mainLayout.addWidget(self.progressBar, 3, 0, 1, 2)
         mainLayout.setRowStretch(1, 1)
         mainLayout.setRowStretch(2, 1)
-        mainLayout.setColumStretch(0, 1)
-        mainLayout.setColumStretch(1, 1)
+        mainLayout.setColumnStretch(0, 1)
+        mainLayout.setColumnStretch(1, 1)
         self.setLayout(mainLayout)
 
         self.changeStyle("Windows")
@@ -152,12 +152,39 @@ class WidgetGallery(QDialog):
         lineEdit.setEchoMode(QLineEdit.Password)
 
         spinBox = QSpinBox(self.bottomRightGroupBox)
-        spinBox.value(50)
+        spinBox.setValue(50)
+
+        dateTimeEdit = QDateTimeEdit(self.bottomRightGroupBox)
+        dateTimeEdit.setDateTime(QDateTime.currentDateTime())
+
+        slider = QSlider(Qt.Horizontal, self.bottomRightGroupBox)
+        slider.setValue(40)
+
+        scrollBar = QScrollBar(Qt.Horizontal, self.bottomRightGroupBox)
+        scrollBar.setValue(60)
+
+        dial = QDial(self.bottomRightGroupBox)
+        dial.setValue(30)
+        dial.setNotchesVisible(True)
+
+        layout = QGridLayout()
+        layout.addWidget(lineEdit, 0, 0, 1, 2)
+        layout.addWidget(spinBox, 1, 0, 1, 2)
+        layout.addWidget(dateTimeEdit, 2, 0, 1, 2)
+        layout.addWidget(slider, 3, 0)
+        layout.addWidget(scrollBar, 4, 0)
+        layout.addWidget(dial, 3, 1, 2, 1)
+        layout.setRowStretch(5, 1)
+        self.bottomRightGroupBox.setLayout(layout)
 
     def createProgressBar(self):
-        pass
+        self.progressBar = QProgressBar()
+        self.progressBar.setRange(0, 10000)
+        self.progressBar.setValue(0)
 
-
+        timer = QTimer(self)
+        timer.timeout.connect(self.advanceProgressBar)
+        timer.start(1000)
 
 
 if __name__ == "__main__":
