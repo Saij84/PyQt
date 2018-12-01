@@ -15,14 +15,13 @@ class WidgetGallery(QDialog):
         styleComboBox = QComboBox()
         styleComboBox.addItems(QStyleFactory.keys())
 
-
         styleLabel = QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
 
-        self.useStylePalletCheckBox = QCheckBox("&Use style's standard palette" )
-        self.useStylePalletCheckBox.setChecked(True)
+        self.useStylePaletteCheckBox = QCheckBox("&Use style's standard palette")
+        self.useStylePaletteCheckBox.setChecked(True)
 
-        disableWidgetCheckbox = QCheckBox("Disable widgets")
+        disableWidgetsCheckBox = QCheckBox("&Disable widgets")
 
         self.createTopLeftGroupBox()
         self.createTopRightGroupBox()
@@ -30,19 +29,20 @@ class WidgetGallery(QDialog):
         self.createBottomRightGroupBox()
         self.createProgressBar()
 
-        styleComboBox.activate[str].connect(self.changeStyle)
-        self.useStylePalletCheckBox.toggle.connect(self.changePalette)
-        disableWidgetCheckbox.toggled.connect(self.topLeftGroupBox.setDisabled)
-        disableWidgetCheckbox.toggled.connect(self.topRightGroupBox.setDisabled)
-        disableWidgetCheckbox.toggled.connect(self.bottomLeftTabWidget.setDisabled)
-        disableWidgetCheckbox.toggled.connect(self.bottomRightGroupBox.setDisabled)
+
+        styleComboBox.activated[str].connect(self.changeStyle)
+        self.useStylePaletteCheckBox.toggled.connect(self.changePalette)
+        disableWidgetsCheckBox.toggled.connect(self.topLeftGroupBox.setDisabled)
+        disableWidgetsCheckBox.toggled.connect(self.topRightGroupBox.setDisabled)
+        disableWidgetsCheckBox.toggled.connect(self.bottomLeftTabWidget.setDisabled)
+        #disableWidgetsCheckBox.toggled.connect(self.bottomRightGroupBox.setDisabled)
 
         topLayout = QHBoxLayout()
         topLayout.addWidget(styleLabel)
         topLayout.addWidget(styleComboBox)
         topLayout.addStretch(1)
-        topLayout.addWidget(self.useStylePalletCheckBox)
-        topLayout.addWidget(disableWidgetCheckbox)
+        topLayout.addWidget(self.useStylePaletteCheckBox)
+        topLayout.addWidget(disableWidgetsCheckBox)
 
         mainLayout = QGridLayout()
         mainLayout.addLayout(topLayout, 0, 0, 1, 2)
@@ -57,14 +57,14 @@ class WidgetGallery(QDialog):
         mainLayout.setColumStretch(1, 1)
         self.setLayout(mainLayout)
 
-        self.ChangeStyle("Windows")
+        self.changeStyle("Windows")
 
     def changeStyle(self, styleName):
         QApplication.setStyle(QStyleFactory.create(styleName))
         self.changePalette()
 
-    def changePallete(self):
-        if(self.useStylePalletCheckBox.isChecked()):
+    def changePalette(self):
+        if(self.useStylePaletteCheckBox.isChecked()):
             QApplication.setPalette(QApplication.style().standardPalette())
         else:
             QApplication.setPalette(self.originalPalette)
@@ -138,13 +138,21 @@ class WidgetGallery(QDialog):
         tab2hbox = QHBoxLayout()
         tab2hbox.setContentsMargins(5, 5, 5, 5)
         tab2hbox.addWidget(textEdit)
-        tab2.setLayout(tab2)
+        tab2.setLayout(tab2hbox)
 
         self.bottomLeftTabWidget.addTab(tab1, "&Table")
         self.bottomLeftTabWidget.addTab(tab2, "Text &Edit")
 
     def createBottomRightGroupBox(self):
-        pass
+        self.bottomRightGroupBox = QGroupBox("Group 3")
+        self.bottomRightGroupBox.setChecked(True)
+        self.bottomRightGroupBox.setChecked(True)
+
+        lineEdit = QLineEdit('s3cRe7')
+        lineEdit.setEchoMode(QLineEdit.Password)
+
+        spinBox = QSpinBox(self.bottomRightGroupBox)
+        spinBox.value(50)
 
     def createProgressBar(self):
         pass
