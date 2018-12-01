@@ -1,4 +1,9 @@
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
+        QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
+        QProgressBar, QPushButton, QRadioButton, QScrollBar, QSizePolicy,
+        QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
+        QVBoxLayout, QWidget)
+
 from PyQt5.QtCore import Qt, QDateTime, QTime
 
 class WidgetGallery(QDialog):
@@ -8,7 +13,8 @@ class WidgetGallery(QDialog):
         self.originalPalette = QApplication.palette()
 
         styleComboBox = QComboBox()
-        styleComboBox.addItem(QStyleFactory.keys())
+        styleComboBox.addItems(QStyleFactory.keys())
+
 
         styleLabel = QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
@@ -18,10 +24,10 @@ class WidgetGallery(QDialog):
 
         disableWidgetCheckbox = QCheckBox("Disable widgets")
 
-        self.createTopLeftGroup()
-        self.createTopRightGroup()
+        self.createTopLeftGroupBox()
+        self.createTopRightGroupBox()
         self.createBottomLeftTabWidget()
-        self.createBottomRightTabWidget()
+        self.createBottomRightGroupBox()
         self.createProgressBar()
 
         styleComboBox.activate[str].connect(self.changeStyle)
@@ -118,9 +124,31 @@ class WidgetGallery(QDialog):
         tab1hbox = QHBoxLayout()
         tab1hbox.setContentsMargins(5, 5, 5, 5)
         tab1hbox.addWidget(tableWidget)
-        tab1.setLayout()
+        tab1.setLayout(tab1hbox)
 
-        textEdit.setP
+        tab2 = QWidget()
+        textEdit = QTextEdit()
+        textEdit.setPlainText("Twinkle, twinkle, little star,\n"
+                              "How I wonder what you are.\n" 
+                              "Up above the world so high,\n"
+                              "Like a diamond in the sky.\n"
+                              "Twinkle, twinkle, little star,\n" 
+                              "How I wonder what you are!\n")
+
+        tab2hbox = QHBoxLayout()
+        tab2hbox.setContentsMargins(5, 5, 5, 5)
+        tab2hbox.addWidget(textEdit)
+        tab2.setLayout(tab2)
+
+        self.bottomLeftTabWidget.addTab(tab1, "&Table")
+        self.bottomLeftTabWidget.addTab(tab2, "Text &Edit")
+
+    def createBottomRightGroupBox(self):
+        pass
+
+    def createProgressBar(self):
+        pass
+
 
 
 
