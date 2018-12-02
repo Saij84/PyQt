@@ -2,51 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae1a9c5-0cc4-4d1f-a57a-e23834f856c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fm_c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/testApplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/testApplication.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1531551758">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="5046" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="5046" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="PyQt" />
@@ -58,20 +22,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scripts/testApplication.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+                <state relative-caret-position="160">
+                  <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#342#0" expanded="true" />
-                    <element signature="e#2512#2595#0" />
-                    <element signature="e#2634#2826#0" />
-                    <element signature="e#2870#3006#0" />
-                    <element signature="e#3053#3697#0" />
-                    <element signature="e#3745#4374#0" />
-                    <element signature="e#4425#5525#0" />
-                    <element signature="e#4913#5259#0" />
-                    <element signature="e#5664#5783#0" />
-                    <marker date="1543665658091" expanded="true" signature="5588:6744" ph="..." />
-                    <marker date="1543665658091" expanded="true" signature="6772:6781" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -142,41 +96,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PyQt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyQt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyQt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyQt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyQt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyQt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="exampels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyQt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyQt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../venv" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -304,8 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49802372" weight="0.2154195" />
       <window_info id="Favorites" order="1" sideWeight="0.5019763" side_tool="true" weight="0.2494331" />
@@ -347,9 +270,6 @@
       <window_info anchor="right" id="Structure" order="3" sideWeight="0.5019763" weight="0.49607536" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/scripts/03_colors.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -365,26 +285,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../MyApps/src/main/python/main.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyApps/src/main/python/main.py" />
     <entry file="file://$PROJECT_DIR$/src/scripts/04_styleSheets.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1361576314/PyQt5/QtWidgets/QApplication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="220" column="8" selection-start-line="220" selection-start-column="8" selection-end-line="220" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1361576314/PyQt5/QtWidgets/QWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1361576314/PyQt5/QtWidgets/QApplication.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1361576314/PyQt5/QtWidgets/QWidget.py" />
     <entry file="file://$PROJECT_DIR$/src/exampels/widgets_example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -406,20 +312,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/testApplication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+        <state relative-caret-position="160">
+          <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
           <folding>
             <element signature="e#0#342#0" expanded="true" />
-            <element signature="e#2512#2595#0" />
-            <element signature="e#2634#2826#0" />
-            <element signature="e#2870#3006#0" />
-            <element signature="e#3053#3697#0" />
-            <element signature="e#3745#4374#0" />
-            <element signature="e#4425#5525#0" />
-            <element signature="e#4913#5259#0" />
-            <element signature="e#5664#5783#0" />
-            <marker date="1543665658091" expanded="true" signature="5588:6744" ph="..." />
-            <marker date="1543665658091" expanded="true" signature="6772:6781" ph="..." />
           </folding>
         </state>
       </provider>

@@ -59,6 +59,7 @@ class WidgetGallery(QDialog):
 
         self.changeStyle("Windows")
 
+
     def changeStyle(self, styleName):
         QApplication.setStyle(QStyleFactory.create(styleName))
         self.changePalette()
