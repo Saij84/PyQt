@@ -240,5 +240,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     gallery = WidgetGallery()
     gallery.show()
-    sys.exit(app.exec_()) 
-c
+    sys.exit(app.exec_())
