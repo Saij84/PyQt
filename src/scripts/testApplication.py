@@ -29,13 +29,12 @@ class WidgetGallery(QDialog):
         self.createBottomRightGroupBox()
         self.createProgressBar()
 
-
         styleComboBox.activated[str].connect(self.changeStyle)
         self.useStylePaletteCheckBox.toggled.connect(self.changePalette)
         disableWidgetsCheckBox.toggled.connect(self.topLeftGroupBox.setDisabled)
         disableWidgetsCheckBox.toggled.connect(self.topRightGroupBox.setDisabled)
         disableWidgetsCheckBox.toggled.connect(self.bottomLeftTabWidget.setDisabled)
-        #disableWidgetsCheckBox.toggled.connect(self.bottomRightGroupBox.setDisabled)
+        disableWidgetsCheckBox.toggled.connect(self.bottomRightGroupBox.setDisabled)
 
         topLayout = QHBoxLayout()
         topLayout.addWidget(styleLabel)
@@ -57,7 +56,8 @@ class WidgetGallery(QDialog):
         mainLayout.setColumnStretch(1, 1)
         self.setLayout(mainLayout)
 
-        self.changeStyle("Windows")
+        self.setWindowTitle("Style")
+        self.changeStyle("fusion")
 
 
     def changeStyle(self, styleName):
@@ -71,9 +71,9 @@ class WidgetGallery(QDialog):
             QApplication.setPalette(self.originalPalette)
 
     def advanceProgressBar(self):
-        curVal = self.ProgressBar.value()
-        maxVal = self.ProgressBar.maximum()
-        self.ProgressBar.setValue((maxVal - curVal) / 100)
+        curVal = self.progressBar.value()
+        maxVal = self.progressBar.maximum()
+        self.progressBar.setValue(curVal + (maxVal - curVal) / 100)
 
     def createTopLeftGroupBox(self):
         self.topLeftGroupBox = QGroupBox("Group 1")
