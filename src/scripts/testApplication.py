@@ -6,6 +6,8 @@ from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
 
 from PyQt5.QtCore import Qt, QDateTime, QTimer
 
+styleDict = {}
+
 class WidgetGallery(QDialog):
     def __init__(self, parent=None):
         super(WidgetGallery, self).__init__(parent)
@@ -14,6 +16,10 @@ class WidgetGallery(QDialog):
 
         styleComboBox = QComboBox()
         styleComboBox.addItems(QStyleFactory.keys())
+
+        for i, key in enumerate(QStyleFactory.keys()):
+            styleDict.update({key:i})
+        print(styleDict)
 
         styleLabel = QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
@@ -57,12 +63,14 @@ class WidgetGallery(QDialog):
         self.setLayout(mainLayout)
 
         self.setWindowTitle("Style")
-        self.changeStyle("fusion")
+        styleComboBox.setCurrentIndex(styleDict[self.changeStyle("WindowsVista")])
 
 
     def changeStyle(self, styleName):
         QApplication.setStyle(QStyleFactory.create(styleName))
         self.changePalette()
+
+        return styleName
 
     def changePalette(self):
         if(self.useStylePaletteCheckBox.isChecked()):

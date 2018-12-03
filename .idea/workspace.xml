@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae1a9c5-0cc4-4d1f-a57a-e23834f856c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/exampels/widgets_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/exampels/widgets_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/testApplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/testApplication.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,52 +11,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1531551758">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="291" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="291" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="PyQt" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/testApplication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="64" column="13" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1361576314/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="4698" column="6" selection-start-line="4698" selection-start-column="6" selection-end-line="4698" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/exampels/widgets_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="125">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
-                <element signature="n#!!doc" />
-                <element signature="e#5174#5818#0" />
-                <element signature="e#5870#6501#0" />
-                <element signature="e#6552#7627#0" />
-                <element signature="e#7011#7357#0" />
-                <element signature="e#7678#8821#0" />
-                <element signature="e#8864#9089#0" />
+                <element signature="e#3114#3758#0" />
+                <element signature="e#3806#4435#0" />
+                <element signature="e#4486#5590#0" />
+                <element signature="e#4974#5320#0" />
+                <element signature="e#5641#6782#0" />
+                <element signature="e#6825#7050#0" />
+                <element signature="e#7085#7204#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+        <entry file="file://$PROJECT_DIR$/src/exampels/widgets_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="165">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="n#!!doc" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,13 +91,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/scripts/testApplication.py" />
         <option value="$PROJECT_DIR$/src/exampels/widgets_example.py" />
+        <option value="$PROJECT_DIR$/src/scripts/testApplication.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1801" />
+    <option name="x" value="1800" />
     <option name="y" value="-8" />
     <option name="width" value="1390" />
     <option name="height" value="1100" />
@@ -102,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,7 +139,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.widgets_example">
+  <component name="RunManager" selected="Python.testApplication">
     <configuration name="02_layout" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyQt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,8 +250,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.widgets_example" />
         <item itemvalue="Python.testApplication" />
+        <item itemvalue="Python.widgets_example" />
         <item itemvalue="Python.02_layout" />
         <item itemvalue="Python.03_colors" />
       </list>
@@ -263,15 +271,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49802372" visible="true" weight="0.24938875" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49802372" visible="true" weight="0.26077098" />
       <window_info id="Favorites" order="1" sideWeight="0.5019763" side_tool="true" weight="0.2494331" />
       <window_info anchor="bottom" id="MayaLog" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.2611051" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.40761477" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.2599179" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.40629274" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -286,26 +295,8 @@
       <window_info anchor="right" id="Structure" order="3" sideWeight="0.5019763" weight="0.49607536" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/scripts/testApplication.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/scripts/testApplication.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/exampels/widgets_example.py</url>
-          <line>106</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/scripts/03_colors.py">
@@ -335,39 +326,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1361576314/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="4698" column="6" selection-start-line="4698" selection-start-column="6" selection-end-line="4698" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/testApplication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1361576314/builtins.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exampels/widgets_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="165">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="n#!!doc" />
-            <element signature="e#5174#5818#0" />
-            <element signature="e#5870#6501#0" />
-            <element signature="e#6552#7627#0" />
-            <element signature="e#7011#7357#0" />
-            <element signature="e#7678#8821#0" />
-            <element signature="e#8864#9089#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/testApplication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#3114#3758#0" />
+            <element signature="e#3806#4435#0" />
+            <element signature="e#4486#5590#0" />
+            <element signature="e#4974#5320#0" />
+            <element signature="e#5641#6782#0" />
+            <element signature="e#6825#7050#0" />
+            <element signature="e#7085#7204#0" />
           </folding>
         </state>
       </provider>
