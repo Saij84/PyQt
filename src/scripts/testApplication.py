@@ -18,8 +18,7 @@ class WidgetGallery(QDialog):
         styleComboBox.addItems(QStyleFactory.keys())
 
         for i, key in enumerate(QStyleFactory.keys()):
-            styleDict.update({key:i})
-        print(styleDict)
+            styleDict.update({key: i})
 
         styleLabel = QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
